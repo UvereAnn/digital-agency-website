@@ -183,7 +183,7 @@ main{
     font-size: 40px;
 }
 
-#vertical-line{
+/**#vertical-line{
     border-left: 6px solid green;
     height: 200px;
     position: absolute;
@@ -191,7 +191,7 @@ main{
     margin-left: 200px;
     margin-top: 200px;
     
-}
+}***/
 
 .future, .creative{
     border: 2px solid black;
@@ -283,16 +283,16 @@ main{
     color: black
 }
 
-#services-line{
+/*#services-line{
     margin: 50px 650px 70px 650px;
     
-}
+}*/
 
 
 /*Works*/
 
 div#works{
-    margin: -80px -160px 70px -160px;
+    margin: 150px -160px 70px -160px;
     background-color: rgb(31, 29, 29);
     border: 2px solid black;
 }
@@ -353,10 +353,10 @@ div.works-images{
     width: 40px;
 }
 
-img#works-line{
+/*img#works-line{
     margin: -300px 650px -20px 650px;
     
-}
+}*/
 
 
 
@@ -500,7 +500,7 @@ img#about-line{
 
 .testimonial-parent{
     background-color: rgb(31, 29, 29);
-    margin: -70px -150px 100px -150px;
+    margin: 150px -150px 100px -150px;
     
 }
 
@@ -605,14 +605,14 @@ i.fa-quote-right{
     
 }
 
-#testimonial-line{
+/**#testimonial-line{
     margin: 70px 670px 70px 670px;
-}
+}**/
 
 
 /*News*/
 #latest-news{
-    margin: 0px -80px;
+    margin: 160px -80px;
 }
 
 #latest-news h3{
@@ -654,9 +654,9 @@ i.fa-quote-right{
     margin: 2px 30px -10px 30px;
 }
 
-#news-line{
+/*#news-line{
     margin: 50px 540px;
-}
+}*/
 
 /*footer*/
 
@@ -826,44 +826,55 @@ i.fa-quote-right{
 }
 
 /********************************************************media queries**************************************************/
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
 
-    .first-main-div{
-        float: start;
+    .navigation-links{
+        margin-left: 10%;
+        margin-top: 50px;
+    }
+    .active{
+        border: none;
+    }
+
+    .dropdown-menu{
+        text-align: right;
+    }
+
+    .fa-magnifying-glass{
+        display: none;
+    }
+
+    .contact-btn{
+        border: none;
+        
+    }
+
+    #bg-image{
+        left: -250px;
     }
 
     .second-main-div{
         display: block;
     }
 
-    .serv{
-        margin-top: 600px;
-        margin-left: 5%;
+    .services{
+        margin-top: 400px;
     }
 
     .services-div{
         display: block;
-        margin-top: 100px;
+        margin: 0px -5px;
+        width: 80%;
     }
 
-    div.services-div-four, div.services-div-one, div.services-div-two, 
-    div.services-div-three, div.services-div-five, div.services-div-six{
-        align-items: center;
-        margin: 5% -1% 5% -5%;
-    }
-
-    #services-line{
-        display: none;
-    }
-
-    .works-text{
-        margin-top: 100px;
-        margin-left: 5%;
+    #last-work-img{
+        margin-bottom: 200px;
     }
 
     .works-images, .works-images img{
         display: block;
         width: 100%;   
+        margin-bottom: 50px;
     }
     
     div.works-images{
@@ -871,21 +882,25 @@ i.fa-quote-right{
     }
 
     div.about-heading{
+        margin-left: 200px;
+    }
+
+    .about-heading h3{
         margin-top: 100px;
-        margin-left: 10%;
     }
 
     div#about{
         margin-top: 10%;
     }
-
+    
     img#about-images-img1{
         display: block;
+        margin-left: -70px;
     }
 
     img#about-images-img2{
         margin-top: 500px;
-        margin-left: -620px;
+        margin-left: -700px;
         display: block;
         width: 700px;
         height: 400px;
@@ -893,29 +908,35 @@ i.fa-quote-right{
 
     img#about-images-img3{
         margin-top: 100px;
-        margin-left: -620px;
+        margin-left: -690px;
         display: block;
         width: 700px;
         height: 400px;
     }
 
+    .first-txt{
+        margin-top: 20px;
+        margin-left: -70px;
+    }
+
     .second-txt, .third-txt{
         margin-top: 200px;
-        margin-left: -620px;
+        margin-left: -690px;
     }
 
     .about-text{
         display: block;
+
     }
 
     .about-text-one{
-        margin-left: -15%;
+        margin-left: 10%;
         margin-top: 10%;
     }
 
     .about-text-two{
-        margin-left: 30%;
-        margin-top: -19%;
+        margin-left: 10%;
+        margin-top: 10%;
     }
 
     .about-text-three{
@@ -923,23 +944,17 @@ i.fa-quote-right{
         margin-top: 15%;
     }
 
-    #about-line{
-        display: none;
-    }
-
-    /********************Testimonials*********************************/
-    
     .testimonial-parent{
         margin-top: 20%;
     }
 
     .testi-first{
-        margin-left: -15%;
+        margin-left: -5%;
     }
 
     .testimonials{
         display: block;
-        margin-left: 50%;
+        margin-left: 35%;
     }
 
     #ellipsis, #testimonial-line{
@@ -1013,9 +1028,6 @@ i.fa-quote-right{
         margin-left: 120px;
     }
 
-
-    /*****************Latest News******************/
-
     #latest-news{
         width: 100%;
         margin-top: 50%;
@@ -1044,11 +1056,9 @@ i.fa-quote-right{
         display: none;
     }
 
-
-    /**************************footer*******************************/
-
     .footer{
         width: 100%;
+        margin-top: -250px;
     }
 
     .footer-div-one{
@@ -1123,17 +1133,23 @@ i.fa-quote-right{
     }
     
     #copyright{
-        margin-left: 5%;
+        margin-left: 20%;
+        width: 100%;
+        text-align: center;
+        align-items: center;
     }
 
     #privacy{
-        margin-top: -5%;
-        margin-left: 48%;
+        margin-top: 10%;
+        margin-left: 20%;
+        width: 100%;
+        text-align: center;
+        align-items: center;
     }
 
     #terms{
-        margin-top: -5%;
-        margin-left: 88%; 
+        margin-top: 10%;
+        margin-left: 45%; 
         margin-right: -50%;
     }
 
@@ -1149,330 +1165,5 @@ i.fa-quote-right{
 
    
 }
-  
 
 
-
-@media screen and (max-width: 767px){
-    
-    .first-main-div{
-        float: start;
-    }
-
-    .second-main-div{
-        display: block;
-    }
-
-    .serv{
-        margin-top: 600px;
-        margin-left: 5%;
-    }
-
-    .services-div{
-        display: block;
-        margin-top: 100px;
-    }
-
-    div.services-div-four, div.services-div-one, div.services-div-two, 
-    div.services-div-three, div.services-div-five, div.services-div-six{
-        align-items: center;
-        margin: 5% -1% 5% -5%;
-    }
-
-    #services-line{
-        display: none;
-    }
-
-    .works-text{
-        margin-top: 100px;
-        margin-left: 5%;
-    }
-
-    .works-images, .works-images img{
-        display: block;
-        width: 100%;   
-    }
-    
-    div.works-images{
-        display: block;   
-    }
-
-    div.about-heading{
-        margin-top: 100px;
-        margin-left: 10%;
-    }
-
-    div#about{
-        margin-top: 10%;
-    }
-
-    img#about-images-img1{
-        display: block;
-    }
-
-    img#about-images-img2{
-        margin-top: 500px;
-        margin-left: -620px;
-        display: block;
-        width: 700px;
-        height: 400px;
-    }
-
-    img#about-images-img3{
-        margin-top: 100px;
-        margin-left: -620px;
-        display: block;
-        width: 700px;
-        height: 400px;
-    }
-
-    .second-txt, .third-txt{
-        margin-top: 200px;
-        margin-left: -620px;
-    }
-
-    .about-text{
-        display: block;
-    }
-
-    .about-text-one{
-        margin-left: -15%;
-        margin-top: 10%;
-    }
-
-    .about-text-two{
-        margin-left: 30%;
-        margin-top: -19%;
-    }
-
-    .about-text-three{
-        margin-left: 10%;
-        margin-top: 15%;
-    }
-
-    #about-line{
-        display: none;
-    }
-
-    /********************Testimonials*********************************/
-    
-    .testimonial-parent{
-        margin-top: 20%;
-    }
-
-    .testi-first{
-        margin-left: -15%;
-    }
-
-    .testimonials{
-        display: block;
-        margin-left: 50%;
-    }
-
-    #ellipsis, #testimonial-line{
-        display: none;
-    }
-
-    .testimonials-icons{
-        display: inline-flex;
-        margin-left: 20%;
-        margin-top: -400%;
-        margin-bottom: 10%;
-        font-size: 200%;
-    }
-
-    #testimonials-h6-one{
-        margin: -300% 5% 0% -10%;    
-        font-size: 14px; 
-        text-align: center;
-    }
-
-    #testimonials-p-one{
-        margin: 10% -10% 0% -30%;
-        font-size: 10px; 
-        text-align: center;
-    }
-    
-    i.fa-quote-right{
-        margin: -20px 130px;
-        font-size: 50px;
-    }
-
-    .testi p{
-        text-align: center;
-    }
-    
-    .star{
-        font-size: 10px;
-        text-align: center;
-    }
-    
-    .testimonial-parent h3{
-        margin-left: 220px;
-        margin-top: 20px;
-        padding: 50px; 
-    }
-    
-    .testimonial-parent hr{
-        margin-left: 210px;
-        width: 50px;
-        margin-top: -75px;
-    }
-    
-    .testimonial-parent h6{
-        margin-left: 220px;
-        margin-top: 30px;
-        color: rgb(61, 238, 223);
-        font-size: 12px;
-    }
-    
-    .testimonials-images img{
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        margin-top: -400px;
-        
-    }
-    
-    .testimonials-images{
-        float: left;
-        margin-top: 240px;
-        margin-left: 120px;
-    }
-
-
-    /*****************Latest News******************/
-
-    #latest-news{
-        width: 100%;
-        margin-top: 50%;
-    }
-
-    .news{
-        display: block;
-    }
-
-    .news-div{
-        width: 100%;
-        margin: 10% 20%;
-    }
-
-    .news-first{
-        margin: -20% -10% -10% 10%;
-        width: 100%;
-        text-align: center;
-    }
-
-    .news-div img{
-        width: 100%;
-    }
-
-    #news-line{
-        display: none;
-    }
-
-
-    /**************************footer*******************************/
-
-    .footer{
-        width: 100%;
-    }
-
-    .footer-div-one{
-        display: inline;
-    }
-
-    .social{
-        width: 100%;
-        margin-left: 20%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-div-one h3{
-        width: 100%;
-        margin-left: 20%;
-        font-size: 170%;
-    }
-
-    .footer-div-one button{
-        width: 50%;
-        margin-left: 45%;
-        font-size: 100%;
-        padding: 5%;
-    }
-
-    .footer-div-two{
-        display: block;
-        margin-left: 30%;
-        
-    }
-
-    .footer-div-two-a{
-        text-align: center;
-        margin-bottom: 10%;
-        margin-left: -20%;
-        display: block;
-        border-bottom: 2px solid rgb(61, 238, 223) !important;
-    }
-
-    .footer-div-two-a hr{
-        display: none;
-    }
-
-    .footer-div-two-b{
-        display: block;
-        margin-left: -20%;
-        margin-right: 10%;
-    }
-
-    .footer-div-two-b2{
-        margin-left: 60%;
-    }
-
-    .footer-div-two-b3{
-        margin-left: 90%;
-    }
-
-    .footer .footer-div-three{
-        display: block;
-        border: none;
-        margin-top: -10%;
-    }
-
-    .footer-div-three-a h6{
-        display: inline;
-        padding: 0% 10%;
-        align-items: center;
-        text-align: center;
-        margin-left: -40%;
-        margin-top: 20%;
-    }
-    
-    #copyright{
-        margin-left: 5%;
-    }
-
-    #privacy{
-        margin-top: -5%;
-        margin-left: 48%;
-    }
-
-    #terms{
-        margin-top: -5%;
-        margin-left: 88%; 
-        margin-right: -50%;
-    }
-
-    .footer-div-three-b{
-        margin: 10% -10% 0% -10%;
-    }
-
-    .footer-div-three-b p{
-        margin: 5% 0% 5% 20%;
-        text-align: center;
-        width: 100%;
-    }
-
-   
-}
